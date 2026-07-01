@@ -1,0 +1,10 @@
+name: Zero Trust Security Gate
+on: [pull_request]
+jobs:
+  trivy-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Trivy Vulnerability Scanner
+        run: |
+          echo "Simulating critical vulnerability..."
+          exit 1
